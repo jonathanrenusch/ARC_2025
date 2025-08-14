@@ -1,0 +1,63 @@
+Loading ARC data...
+Loaded 1000 challenges and 1000 solutions
+Visualizing 100 random challenges...
+Saving to directory: examples/20250811_230050
+Processing challenge 1/100: f0df5ff0
+Saved visualization to examples/20250811_230050/challenge_f0df5ff0.png
+Processing challenge 2/100: d6542281
+Saved visualization to examples/20250811_230050/challenge_d6542281.png
+Processing challenge 3/100: 639f5a19
+Saved visualization to examples/20250811_230050/challenge_639f5a19.png
+Processing challenge 4/100: 72207abc
+Saved visualization to examples/20250811_230050/challenge_72207abc.png
+Processing challenge 5/100: 3d588dc9
+Saved visualization to examples/20250811_230050/challenge_3d588dc9.png
+Processing challenge 6/100: 68b67ca3
+Saved visualization to examples/20250811_230050/challenge_68b67ca3.png
+Processing challenge 7/100: 05269061
+Saved visualization to examples/20250811_230050/challenge_05269061.png
+Processing challenge 8/100: 36fdfd69
+Saved visualization to examples/20250811_230050/challenge_36fdfd69.png
+Processing challenge 9/100: 11e1fe23
+Saved visualization to examples/20250811_230050/challenge_11e1fe23.png
+Processing challenge 10/100: e6721834
+Saved visualization to examples/20250811_230050/challenge_e6721834.png
+Processing challenge 11/100: 9b2a60aa
+Saved visualization to examples/20250811_230050/challenge_9b2a60aa.png
+Processing challenge 12/100: a416fc5b
+Saved visualization to examples/20250811_230050/challenge_a416fc5b.png
+Processing challenge 13/100: 60b61512
+Saved visualization to examples/20250811_230050/challenge_60b61512.png
+Processing challenge 14/100: 5751f35e
+Saved visualization to examples/20250811_230050/challenge_5751f35e.png
+Processing challenge 15/100: fc754716
+Saved visualization to examples/20250811_230050/challenge_fc754716.png
+Processing challenge 16/100: e7b06bea
+Saved visualization to examples/20250811_230050/challenge_e7b06bea.png
+Processing challenge 17/100: 31aa019c
+Saved visualization to examples/20250811_230050/challenge_31aa019c.png
+Processing challenge 18/100: 42a50994
+Saved visualization to examples/20250811_230050/challenge_42a50994.png
+Processing challenge 19/100: 444801d8
+Saved visualization to examples/20250811_230050/challenge_444801d8.png
+Processing challenge 20/100: db615bd4
+Saved visualization to examples/20250811_230050/challenge_db615bd4.png
+Processing challenge 21/100: 9473c6fb
+Saved visualization to examples/20250811_230050/challenge_9473c6fb.png
+Processing challenge 22/100: 0e671a1a
+Saved visualization to examples/20250811_230050/challenge_0e671a1a.png
+Processing challenge 23/100: 5ecac7f7
+Traceback (most recent call last):
+  File "/home/iwsatlas1/jrenusch/arc/ARC_2025/src/data_vis/arc_visualizer.py", line 242, in <module>
+    
+  File "/home/iwsatlas1/jrenusch/arc/ARC_2025/src/data_vis/arc_visualizer.py", line 237, in main
+    # Visualize random challenges (default behavior)
+  File "/home/iwsatlas1/jrenusch/arc/ARC_2025/src/data_vis/arc_visualizer.py", line 194, in visualize_random_challenges
+    
+  File "/home/iwsatlas1/jrenusch/arc/ARC_2025/src/data_vis/arc_visualizer.py", line 145, in visualize_challenge
+    # Test Solution (from solutions file)
+  File "/home/iwsatlas1/jrenusch/.local/lib/python3.10/site-packages/matplotlib/pyplot.py", line 1323, in subplot
+    key = SubplotSpec._from_subplot_args(fig, args)
+  File "/home/iwsatlas1/jrenusch/.local/lib/python3.10/site-packages/matplotlib/gridspec.py", line 598, in _from_subplot_args
+    raise ValueError(
+ValueError: num must be an integer with 1 <= num <= 12, not 13
