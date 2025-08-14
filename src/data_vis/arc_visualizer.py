@@ -136,19 +136,21 @@ def visualize_challenge(challenge_id, challenge_data, solution_data=None, save_p
     
     # Plot test examples in second row
     for i, example in enumerate(test_examples):
-        base_idx = max_cols + 1  # Start from second row
+        # Calculate positions in second row (row index 2)
+        input_pos = max_cols + (i * 2) + 1   # Second row, correct column for input
+        solution_pos = max_cols + (i * 2) + 2  # Second row, correct column for solution
         
         # Test Input
-        ax_input = plt.subplot(2, max_cols, base_idx + i * 2 + 1)
+        ax_input = plt.subplot(2, max_cols, input_pos)
         plot_grid(ax_input, example['input'], f'Test {i+1} Input')
         
         # Test Solution (from solutions file)
         if solution_data and i < len(solution_data):
-            ax_solution = plt.subplot(2, max_cols, base_idx + i * 2 + 2)
+            ax_solution = plt.subplot(2, max_cols, solution_pos)
             plot_grid(ax_solution, solution_data[i], f'Test {i+1} Solution')
         else:
             # Show placeholder if no solution available
-            ax_solution = plt.subplot(2, max_cols, base_idx + i * 2 + 2)
+            ax_solution = plt.subplot(2, max_cols, solution_pos)
             ax_solution.text(0.5, 0.5, 'No Solution\nAvailable', 
                            horizontalalignment='center', verticalalignment='center',
                            fontsize=12, color='red')
@@ -205,7 +207,7 @@ def main():
     parser.add_argument('--challenge-id', 
                        help='Specific challenge ID to visualize')
     parser.add_argument('--n-samples','-n', type=int, default=100,
-                       help='Number of random challenges to visualize (default: 10)')
+                       help='Number of random challenges to visualize (default: 100)')
     parser.add_argument('--save-dir',
                        help='Directory to save visualizations (default: timestamped directory in examples/)')
     
