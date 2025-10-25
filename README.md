@@ -13,7 +13,7 @@ The ARC (Abstraction and Reasoning Corpus) is a benchmark designed to measure an
 
 ## 🖼️ Example Gallery
 
-**Want to see it in action?** Check out the [`examples/`](examples/) directory containing **100+ pre-generated visualization examples** showcasing different challenge types, patterns, and complexities from the ARC dataset. These examples demonstrate the visualization capabilities and give you a preview of what the dataset looks like!
+**Want to see it in action?** Check out the [`examples/`](/src/data_vis/examples/) directory containing **100+ pre-generated visualization examples** showcasing different challenge types, patterns, and complexities from the ARC dataset. These examples demonstrate the visualization capabilities and give you a preview of what the dataset looks like!
 
 ## ✨ Features
 
